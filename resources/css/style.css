@@ -81,7 +81,7 @@ nav a {
   margin: 40px;
 }
 
-.nav .container {
+.nav .navbar {
   width: 100%;
 }
 
@@ -120,8 +120,8 @@ nav a {
   width: 100%;
   color: white;
   display: block;
+  padding: 0.5em 0;
 
-  align-items: center;
 
 }
 
