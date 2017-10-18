@@ -1,24 +1,35 @@
 html {
-  font-size: 16px;
+  font-size: 18px;
   font-family: Helvetica;
-  max-width: 960px;
-  margin: 0 auto;
+  background-color: white;
+
 }
 
 body {
   justify-content: center;
 
-  background-color: white;
+
   margin: 0 auto;
 }
 
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
 .header {
-  display: flex;
+  display: block;
   background-color: black;
   color: white;
   text-align:left;
   align-items: center;
 
+}
+.header .container {
+    display: flex;
+    align-items: center;
+    padding: 12px 0 12px 0.5em;
 }
 
 .logo img{
@@ -35,11 +46,11 @@ body {
 
 .mainpic {
   background-image: url('https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/moto.jpeg');
-  height: 25rem;
-  padding: 2.72rem;
+  height: 25em;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
 }
 
 .bikes {
@@ -48,8 +59,8 @@ body {
   color: white;
   font-weight: bold;
   padding: 2rem 3rem;
-  margin-top: 9rem;
-  margin-left: 3rem;
+  position: relative;
+  top: 9rem;
 }
 
 .bikes span {
@@ -62,14 +73,16 @@ body {
   margin-top: 0.25rem;
 }
 
-a {
+nav a {
   color: white;
   font-family: Helvetica;
   font-size: 1rem;
-}
-nav a {
   text-decoration: none;
   margin: 40px;
+}
+
+.nav .container {
+  width: 100%;
 }
 
 .nav nav {
@@ -77,9 +90,8 @@ nav a {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   margin: 0 auto;
-  width: 100%;
+
   text-align: center;
-  justify-content: space-around;
 }
 
 .maincontent {
@@ -96,9 +108,9 @@ nav a {
 
 #items img {
   text-align: center;
-  padding: 2rem;
+  padding: 2rem 0;
   justify-content: center;
-  max-width: 30%;
+  width: 50%;
   max-height: 9rem;
 
 }
@@ -120,10 +132,12 @@ nav a {
   display: flex;
   justify-content: center;
   margin: 0 auto;
+
 }
 
 .item {
   display: block;
+  width: 30%;
 
   border: 4px solid black;
   margin: 3rem 1.5rem;
@@ -169,4 +183,5 @@ nav a {
   height: 5rem;
   justify-content: center;
   align-content: center;
+  margin: 0 auto;
 }
